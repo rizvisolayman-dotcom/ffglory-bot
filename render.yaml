@@ -1,0 +1,8 @@
+services:
+  - type: worker
+    name: ffglory-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
